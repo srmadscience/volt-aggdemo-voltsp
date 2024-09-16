@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deployment>
+    <cluster hostcount="1" sitesperhost="4" kfactor="0" schema="ddl"/>
+
+    <security enabled="false" provider="hash"/>
+    <ssl enabled="false" external="false" dr="false" internal="false"/>
+
+    <httpd enabled="true">
+        <jsonapi enabled="true"/>
+    </httpd>
+
+    <export>
+        <configuration target="bad_cdrs" enabled="true" type="kafka">
+            <property name="bootstrap.servers">localhost:9092</property>
+            <property name="topic.key">bad_cdrs.bad_cdrs</property>
+        </configuration>
+        <configuration target="unaggregated_cdrs" enabled="true" type="kafka">
+            <property name="bootstrap.servers">localhost:9092</property>
+            <property name="topic.key">unaggregated_cdrs.unaggregated_cdrs</property>
+        </configuration>
+        <configuration target="aggregated_cdrs" enabled="true" type="kafka">
+            <property name="bootstrap.servers">localhost:9092</property>
+            <property name="topic.key">aggregated_cdrs.aggregated_cdrs</property>
+        </configuration>
+    </export>
+
+    <import>
+        <configuration type="kafka" enabled="true" format="csv" version="10" priority="4">
+            <property name="topics">incoming_cdrs</property>
+            <property name="procedure">HandleMediationCDR</property>
+            <property name="brokers">localhost:9092</property>
+        </configuration>
+    </import>
+</deployment>
