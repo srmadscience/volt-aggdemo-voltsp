@@ -210,3 +210,4 @@ An example usage would be:
 
 
 ![Google Analytics](https://www.googletagmanager.com/gtag/js?id=G-QZZ7G3CH8D)
+![Test](https://www.google-analytics.com/collect?v=1&cid=1&t=pageview&ec=repo&ea=open&dp=mjpitz%2Fgo-gracefully&dt=mjpitz%2Fgo-gracefully&tid=UA-xxx-y)
