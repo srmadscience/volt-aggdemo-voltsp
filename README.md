@@ -1,3 +1,13 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZZ7G3CH8D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QZZ7G3CH8D');
+</script>
+
 
 # voltdb-aggdemo-voltsp
 A demonstration of how VoltDB can be used for the kind of streaming aggregation tasks common in Telco. This demo has been modified to use the VoltSP functionality inrtroduced in V14.0.
