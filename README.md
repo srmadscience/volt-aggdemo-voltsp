@@ -1,13 +1,3 @@
-<img title="Volt Active Data" alt="Volt Active Data Logo" src="http://52.210.27.140:8090/voltdb-awswrangler-servlet/VoltActiveData.png">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z498H2151H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z498H2151H');
-</script>
 
 # voltdb-aggdemo-voltsp
 A demonstration of how VoltDB can be used for the kind of streaming aggregation tasks common in Telco. This demo has been modified to use the VoltSP functionality inrtroduced in V14.0.
@@ -217,3 +207,6 @@ It takes the following parameters:
 An example usage would be:
 
 ````java -jar voltdb-aggdemo-client.jar vdb1,vdb2,vdb3 100000 80 1200 -1 -1 -1 -1 0````
+
+
+![Google Analytics](https://www.google-analytics.com/collect?v=1&cid=1&t=pageview&ec=repo&ea=open&dp=srmadscience%2Fvolt-aggdemo-voltsp&dt=srmnadscience%2Fvolt-aggdemo-voltsp&tid=G-QZZ7G3CH8D)
