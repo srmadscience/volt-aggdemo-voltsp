@@ -209,4 +209,4 @@ An example usage would be:
 ````java -jar voltdb-aggdemo-client.jar vdb1,vdb2,vdb3 100000 80 1200 -1 -1 -1 -1 0````
 
 
-![Google Analytics](https://www.google-analytics.com/collect?v=1&cid=1&t=pageview&ec=repo&ea=open&dp=srmadscience%2Fvolt-aggdemo-voltsp&dt=srmnadscience%2Fvolt-aggdemo-voltsp&tid=G-QZZ7G3CH8D)
+[Google Analytics](https://www.google-analytics.com/collect?v=1&cid=1&t=pageview&ec=repo&ea=open&dp=srmadscience%2Fvolt-aggdemo-voltsp&dt=srmnadscience%2Fvolt-aggdemo-voltsp&tid=G-QZZ7G3CH8D)
